@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 定义时间范围
+t = np.linspace(0, 2 * np.pi, 1000)
+
+# 生成余弦信号
+y = np.cos(t)
+
+# 绘制连续信号
+plt.figure(figsize=(10, 6))
+plt.plot(t, y)
+plt.title('Continuous Cosine Signal')
+plt.xlabel('Time (s)')
+plt.ylabel('Amplitude')
+plt.grid(True)
+plt.show()
